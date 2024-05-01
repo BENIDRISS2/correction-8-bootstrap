@@ -1,0 +1,166 @@
+#section-premiere {
+  background-image: url(img/header-bg.jpg);
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+#my-nav {
+  display: block;
+  background-color: #0e0f1173;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#my-nav .navbar-nav .nav-item .nav-link {
+  font-size: 0.95rem;
+  color: #fff;
+  margin: 0, 10px;
+}
+#my-nav .navbar-nav .nav-item .nav-link:hover {
+  color: #ffc800;
+}
+/*____________________________________MY HEADER_______________________________________________*/
+
+header {
+  min-width: 100%;
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  color: #fff;
+  background-repeat: no-repeat;
+}
+header .header-content h2 {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header .header-content h1 {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.btn-xl {
+  padding: 1.25rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+/* ___________________________________portfolio_______________________________________ */
+
+#Portfolio .foliocard .foliolink {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+#Portfolio .foliocard .foliolink .portf-hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 185, 47, 0.584);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+}
+
+#Portfolio .foliocard .foliolink:hover .portf-hover {
+  opacity: 1;
+}
+
+/* __________________________________CERCLE GLOBAL______________________________ */
+
+#cercles .globcercle {
+  /* background-color: #b1acd9; */
+  height: 120rem;
+}
+
+.divleft-un::before {
+  margin-top: 5%;
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 90rem;
+  left: 52%;
+  /* z-index: 2; */
+  background-color: #40403f;
+}
+.divleft-un,
+.divright-un,
+.con-divleft-deux,
+.divright-deux,
+.divneutre {
+  display: block;
+  /* background-color: aqua; */
+  min-height: 15rem;
+  margin-top: 6rem;
+}
+.divright-un .col-md-4,
+.divright-deux .col-md-4 {
+  position: absolute;
+  left: 60%;
+}
+
+.image {
+  width: 12rem;
+  height: 12rem;
+  align-items: center;
+  border: 10px solid #a7a1a1;
+  position: absolute;
+  left: 45%;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .divleft-un,
+  .divright-un,
+  .con-divleft-deux,
+  .divright-deux,
+  .divneutre {
+    display: block;
+    min-width: 100%;
+    min-height: 15rem;
+    margin-top: 6rem;
+  }
+
+  .image {
+    position: static;
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    border: 5px solid #a7a1a1;
+    z-index: 1;
+  }
+  .divleft-un::before {
+    margin-top: 5%;
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 93rem;
+    left: 11%;
+    /* background-color: #a7a1a1; */
+    /* z-index: 2; */
+  }
+  .position-absolute,
+  .divright-un .col-md-4,
+  .divright-deux .col-md-4 {
+    position: static;
+    width: 100%;
+  }
+  #cercles .globcercle {
+    height: 150rem;
+  }
+  #wagni-text {
+    font-size: 9px;
+    text-align: center;
+    margin-left: 3%;
+    align-items: center;
+  }
+}
